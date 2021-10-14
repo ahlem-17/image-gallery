@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <script type="text/javascript" src="js/showPc.js"></script>
+    <style>
+        body {}
+        
+        .container {
+            background-color: #CCCCCC;
+        }
+        
+        ul {
+            background-color: #CCCCCC;
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            list-style-type: none;
+        }
+        
+        ul>* {
+            flex-basis: 20%;
+        }
+        
+        h1 {
+            letter-spacing: 2rem;
+            color: #CCCCCC;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+        }
+        
+        img {
+            background-color: #fff;
+            padding: 4px;
+            margin: 4px 0 0 4px;
+            box-shadow: 0 0 0 4px #fff;
+        }
+        
+        p {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snaphots</h1>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="images/juhla.png" title="A firworks display" onclick="showPic(this); return false;">Fireworks</a></li>
+            <li>
+                <a href="images/coffe.png" title="A cuo of black Coffee" onclick="showPic(this); return false;">Coffee</a></li>
+            <li>
+                <a href="images/fleur.png" title="A red, red rose" onclick="showPic(this); return false;">Rose</a></li>
+            <li>
+                <a href="images/tour.png" title="The Famous clock" onclick="showPic(this); return false;">Big Ben</a></li>
+        </ul>
+        <img src="images/download.gif" alt="my image gallery" id="placeholder">
+        <p id="description">Choose an image.</p>
+    </div>
+</body>
+
+</html>
